@@ -33,8 +33,8 @@ module.exports = {
       user : 'node',
       host : '202.182.124.93',
       ref  : 'origin/master',
-      repo : 'git@github.com:francishero/connect-api-2.git',
-      path : '/home/francis/apps',
+      repo : 'git@github.com:labirin/pickabook-restful-api-master.git',
+      path : '/home/labirin/server',
       'post-deploy' : ' mkdir -p logs && touch logs/all-logs.log &&npm install && pm2 startOrRestart ecosystem.config.js --env production',
       'pre-deploy-local':"echo `Deploying to alicloud server`"
     },
@@ -42,8 +42,8 @@ module.exports = {
       user : 'node',
       host : '202.182.124.93',
       ref  : 'origin/master',
-      repo : 'git@github.com:francishero/connect-api-2.git',
-      path : '/home/francis/apps',
+      repo : 'git@github.com:labirin/pickabook-restful-api-master.git',
+      path : '/home/labirin/server',
       'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'
